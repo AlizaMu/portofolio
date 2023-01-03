@@ -5,4 +5,3 @@ pip==21.2.4
 matplotlib==3.4.3
 scikit-learn
 seaborn
-joblib
