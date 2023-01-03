@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st 
+import joblib
 
 # load model
 model_voting = joblib.load('model_voting.joblib')
