@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 
 # load model
-random_forest = joblib.load(open('random_forest_joblib.rar'))
+random_forest = joblib.load(open('random_forest_joblib'))
 #judul web
 st.title('Prediksi Masa Berlaku Kartu Kredit')
 
