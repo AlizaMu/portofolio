@@ -2,7 +2,7 @@ import pickle
 import streamlit as st 
 
 # load model
-model_voting = pickle.load(open('model_voting.sav', 'rb'))
+model_voting = joblib.load('model_voting.joblib')
 #judul web
 st.title('Prediksi Keselamatan Pasien Penyakit Jantung')
 
