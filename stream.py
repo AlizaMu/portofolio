@@ -2,7 +2,7 @@ import pickle
 import streamlit as st 
 
 # load model
-jantung_model = pickle.load(open('model_voting.sav', 'rb'))
+model_voting = pickle.load(open('model_voting.sav', 'rb'))
 #judul web
 st.title('Prediksi Keselamatan Pasien Penyakit Jantung')
 
@@ -30,7 +30,7 @@ pred_keselamatan = ''
 
 # membuat tombol untuk prediksi
 if st.button('Prediksi Keselamatan'):
-    pred_keselamatan = jantung_model.predict([[umur, persentase_darah_yang_meninggalkan_jantung_tiap_kontraksi, level_creatinine, level_sodium, jumlah_hari_untuk_follup]])
+    pred_keselamatan = model_voting.predict([[umur, persentase_darah_yang_meninggalkan_jantung_tiap_kontraksi, level_creatinine, level_sodium, jumlah_hari_untuk_follup]])
 
     if(pred_keselamatan[0] == 1):
         pred_keselamatan = 'Pasien Meninggal'
