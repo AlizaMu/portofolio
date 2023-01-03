@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy
+
 
 st.write("""
 # Aplikasi Luas Lingkaran
@@ -11,6 +11,6 @@ jari_jari = st.number_input("Masukkan Jari-jari", 0)
 hitung = st.button("Hitung Luas")
 
 if hitung:
-    luas = pi * jari_jari * jari_jari
+    luas = 22/7 * jari_jari * jari_jari
     st.success(f"Luas Lingkarannya adalah {luas}")
     st.ballons()
