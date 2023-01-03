@@ -13,4 +13,4 @@ hitung = st.button("Hitung Luas")
 if hitung:
     luas = 22/7 * jari_jari * jari_jari
     st.success(f"Luas Lingkarannya adalah {luas}")
-    st.ballons()
+    st.balloons()
